@@ -1,0 +1,291 @@
+/* ========================
+       GRID LAYOUT
+=========================*/
+
+.wrapper {
+  margin: 0 auto;
+  height: fill;
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px, 40vh) minmax(50px, auto) minmax(50px, 500px);
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  position: relative;
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* ========================
+       STYLES
+=========================*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #bcbcbc;
+}
+
+header {
+  display: flex;
+  color: white;
+  height: 40vh;
+  background: url("/images/HomeOffice.jpg") no-repeat;
+  background-size: cover;
+}
+
+#left-nav {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 1.2em;
+}
+
+#right-nav {
+  display: none;
+  list-style-type: none;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+#right-nav li {
+  margin: 15px;
+  text-align: center;
+}
+
+#right-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.title {
+  width: 100%;
+  font-size: 1.2em;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.title img {
+  height: 60px;
+  width: 60px;
+}
+
+main {
+  text-align: center;
+  background-color: whitesmoke;
+  line-height: 1.7;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+main img {
+  width: 250px;
+  height: 161px;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+}
+
+#m-wrapper {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+footer {
+  color: white;
+  background-color: #26262a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer h3 {
+  font-weight: 300;
+  margin-top: 15%;
+  font-family: "Cormorant Garamond", serif;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  color: lightgray;
+  margin-bottom: 15%;
+  font-size: 0.65em;
+}
+
+#bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#bottom-social-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+/* ========================
+       MEDIA QUERIES
+=========================*/
+
+@media (min-width: 575px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50px, 60vh) minmax(50px, auto) minmax(50px, 500px);
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  header {
+    height: 60vh;
+  }
+
+  #left-nav {
+    font-size: 1.4em;
+  }
+
+  #ham-icon {
+    font-size: 1.4em;
+  }
+
+  main {
+    font-size: 1.1em;
+  }
+
+  main img {
+    width: 330px;
+    height: 241px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  footer h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 767px) {
+  #left-nav {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.4em;
+  }
+
+  .title {
+    font-size: 2.2em;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+  #right-nav {
+    display: flex !important;
+    flex-direction: row;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    margin: 0;
+  }
+
+  .blog-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border: solid black;
+  }
+
+  .blog-titles {
+    flex: 2;
+  }
+
+  main img {
+    width: 300px;
+    height: 211px;
+  }
+
+  footer {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  footer h3 {
+    font-size: 1.4em;
+  }
+
+  .footer-icon {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 991px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50px, 70vh) minmax(50px, auto) minmax(50px, 500px);
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  header {
+    height: 70vh;
+  }
+
+  .title {
+    font-size: 2.9em;
+  }
+
+  main {
+    font-size: 1.3em;
+  }
+
+  /* main img {
+    width: 330px;
+    height: 241px;
+  } */
+}

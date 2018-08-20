@@ -8,7 +8,7 @@
   max-width: 1250px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, 40vh) minmax(50px, auto) minmax(50px, 500px);
+  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, 500px);
   grid-template-areas:
     "header"
     "main"
@@ -46,11 +46,12 @@ body {
 }
 
 header {
+  background-color: #26262a;
   display: flex;
   color: white;
-  height: 40vh;
+  /* height: 40vh;
   background: url("/images/HomeOffice.jpg") no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 #left-nav {
@@ -84,7 +85,7 @@ header {
   cursor: pointer;
 }
 
-.title {
+/* .title {
   width: 100%;
   font-size: 1.2em;
   justify-self: center;
@@ -95,7 +96,7 @@ header {
 .title img {
   height: 60px;
   width: 60px;
-}
+} */
 
 main {
   text-align: center;
@@ -110,10 +111,10 @@ main img {
   height: 161px;
 }
 
-main a {
+/* main a {
   text-decoration: none;
   color: black;
-}
+} */
 
 #m-wrapper {
   margin-top: 15%;
@@ -122,9 +123,9 @@ main a {
   margin-right: 5%;
 }
 
-.blog-titles {
+/* .blog-titles {
   margin-bottom: 15%;
-}
+} */
 
 footer {
   color: white;
@@ -174,14 +175,11 @@ footer p {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(50px, 60vh) minmax(50px, auto) minmax(50px, 500px);
+    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, 500px);
     grid-template-areas:
       "header"
       "main"
       "footer";
-  }
-  header {
-    height: 60vh;
   }
 
   #left-nav {
@@ -196,14 +194,10 @@ footer p {
     font-size: 1.1em;
   }
 
-  main img {
+  /* main img {
     width: 330px;
     height: 241px;
-  }
-
-  .title {
-    font-size: 1.5em;
-  }
+  } */
 
   footer h3 {
     font-size: 1.3em;
@@ -218,12 +212,16 @@ footer p {
     font-size: 1.4em;
   }
 
-  .title {
+  /* .title {
     font-size: 2.2em;
-  }
+  } */
 
   #navbar-toggle {
     display: none;
+  }
+
+  header {
+    height: 80px;
   }
 
   #right-nav {
@@ -235,24 +233,10 @@ footer p {
     margin: 0;
   }
 
-  .blog-info {
-    margin-bottom: 5%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    border: solid black;
-  }
-
-  .blog-titles {
-    flex: 2;
-    margin: 0;
-  }
-
-  main img {
+  /* main img {
     width: 300px;
     height: 211px;
-  }
+  } */
 
   footer {
     padding-left: 12%;
@@ -266,32 +250,4 @@ footer p {
   .footer-icon {
     font-size: 1.3em;
   }
-}
-
-@media (min-width: 991px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(50px, 70vh) minmax(50px, auto) minmax(50px, 500px);
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-  }
-  header {
-    height: 70vh;
-  }
-
-  .title {
-    font-size: 2.9em;
-  }
-
-  main {
-    font-size: 1.3em;
-  }
-
-  /* main img {
-    width: 330px;
-    height: 241px;
-  } */
 }

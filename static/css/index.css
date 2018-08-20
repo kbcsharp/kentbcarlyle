@@ -48,7 +48,7 @@ body {
 header {
   display: flex;
   color: white;
-  height: 40vh;
+  height: 400px;
   background: url("../images/HomeOffice.jpg") no-repeat;
   background-size: cover;
 }

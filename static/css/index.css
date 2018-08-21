@@ -216,7 +216,6 @@ footer p {
 }
 
 #bottom-nav li a:hover {
-  border-bottom: 3px solid white;
   text-shadow: 0 0 30px #fff;
   transition: all 0.2s ease;
 }

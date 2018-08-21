@@ -98,7 +98,6 @@ header {
 }
 
 main {
-  text-align: center;
   background-color: whitesmoke;
   line-height: 1.7;
   font-size: 1em;
@@ -106,8 +105,8 @@ main {
 }
 
 main img {
-  width: 250px;
-  height: 161px;
+  width: 260px;
+  height: 195px;
 }
 
 main a {
@@ -116,14 +115,14 @@ main a {
 }
 
 #m-wrapper {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 15%;
   margin-bottom: 15%;
   margin-left: 5%;
   margin-right: 5%;
-}
-
-.blog-titles {
-  margin-bottom: 15%;
 }
 
 footer {
@@ -169,3 +168,129 @@ footer p {
 /* ========================
        MEDIA QUERIES
 =========================*/
+
+@media (min-width: 575px) {
+  #left-nav {
+    font-size: 1.4em;
+  }
+
+  #ham-icon {
+    font-size: 1.4em;
+  }
+
+  main {
+    font-size: 1.1em;
+  }
+
+  main img {
+    width: 320px;
+    height: 255px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  footer h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 767px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50px, 600px) minmax(50px, auto) minmax(50px, 500px);
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  header {
+    height: 600px;
+  }
+
+  #left-nav {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.4em;
+  }
+
+  .title {
+    font-size: 2.2em;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+  #right-nav {
+    display: flex !important;
+    flex-direction: row;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    margin: 0;
+  }
+
+  main img {
+    width: 320px;
+    height: 255px;
+  }
+
+  footer {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  footer h3 {
+    font-size: 1.4em;
+  }
+
+  .footer-icon {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 991px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50px, 700px) minmax(50px, auto) minmax(50px, 500px);
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  header {
+    height: 700px;
+  }
+
+  .title {
+    font-size: 2.9em;
+  }
+
+  main {
+    font-size: 1.3em;
+  }
+
+  footer {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  footer h3 {
+    margin-top: 10%;
+  }
+
+  footer p {
+    margin-bottom: 10%;
+  }
+
+  /* main img {
+    width: 330px;
+    height: 241px;
+  } */
+}

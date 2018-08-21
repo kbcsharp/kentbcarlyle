@@ -53,11 +53,15 @@ header {
   background-size: cover;
 }
 
+#ham-icon {
+  font-size: 1.2em;
+}
+
 #left-nav {
   position: absolute;
   top: 15px;
   left: 20px;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 #right-nav {
@@ -75,6 +79,19 @@ header {
 #right-nav li a {
   color: white;
   text-decoration: none;
+}
+
+#right-nav li a:link {
+  color: white;
+}
+
+#right-nav li a:visited {
+  color: white;
+}
+
+#right-nav li a:hover {
+  border-bottom: 3px solid white;
+  transition: all 0.4s ease;
 }
 
 #navbar-toggle {
@@ -154,10 +171,37 @@ footer p {
   list-style-type: none;
 }
 
+#bottom-nav li a:link {
+  color: white;
+}
+
+#bottom-nav li a:visited {
+  color: white;
+}
+
+#bottom-nav li a:hover {
+  border-bottom: 3px solid white;
+  transition: all 0.2s ease;
+  text-shadow: 0 0 30px #fff;
+}
+
 #bottom-social-nav {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+}
+
+#bottom-social-nav li a:link {
+  color: white;
+}
+
+#bottom-social-nav li a:visited {
+  color: white;
+}
+
+#bottom-social-nav li a:hover {
+  text-shadow: 0 0 30px #fff;
+  transition: all 0.2s ease;
 }
 
 /* ========================

@@ -78,6 +78,19 @@ header {
   text-decoration: none;
 }
 
+#right-nav li a:link {
+  color: white;
+}
+
+#right-nav li a:visited {
+  color: white;
+}
+
+#right-nav li a:hover {
+  border-bottom: 3px solid white;
+  transition: all 0.4s ease;
+}
+
 #navbar-toggle {
   position: absolute;
   top: 17px;
@@ -147,10 +160,37 @@ footer p {
   list-style-type: none;
 }
 
+#bottom-nav li a:link {
+  color: white;
+}
+
+#bottom-nav li a:visited {
+  color: white;
+}
+
+#bottom-nav li a:hover {
+  border-bottom: 3px solid white;
+  text-shadow: 0 0 30px #fff;
+  transition: all 0.2s ease;
+}
+
 #bottom-social-nav {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+}
+
+#bottom-social-nav li a:link {
+  color: white;
+}
+
+#bottom-social-nav li a:visited {
+  color: white;
+}
+
+#bottom-social-nav li a:hover {
+  text-shadow: 0 0 30px #fff;
+  transition: all 0.2s ease;
 }
 
 /* ========================

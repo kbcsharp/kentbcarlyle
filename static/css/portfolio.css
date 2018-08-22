@@ -119,11 +119,26 @@ main {
 main img {
   width: 260px;
   height: 195px;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
 main a {
   text-decoration: none;
   color: black;
+}
+
+.projects:link {
+  color: transparent;
+}
+
+.projects:visited {
+  color: transparent;
+}
+
+.projects:hover {
+  opacity: 0.5;
+  transition: all 0.8s ease;
 }
 
 #m-wrapper {

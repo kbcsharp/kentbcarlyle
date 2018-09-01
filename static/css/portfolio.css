@@ -51,6 +51,7 @@ header {
   height: 400px;
   background: url("/images/computer2.jpg") no-repeat;
   background-size: cover;
+  font-family: "Montserrat", sans-serif;
 }
 
 #ham-icon {
@@ -62,6 +63,7 @@ header {
   top: 15px;
   left: 20px;
   font-size: 1.3em;
+  font-weight: 100;
 }
 
 #right-nav {
@@ -69,6 +71,7 @@ header {
   list-style-type: none;
   flex-direction: column;
   margin-top: 70px;
+  font-weight: 100;
 }
 
 #right-nav li {
@@ -103,10 +106,14 @@ header {
 
 .title {
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.8em;
   justify-self: center;
   align-self: center;
   text-align: center;
+}
+
+.title h6 {
+  font-family: "EB Garamond", serif;
 }
 
 main {
@@ -184,6 +191,7 @@ footer p {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 #bottom-nav li a:link {
@@ -230,6 +238,10 @@ footer p {
     font-size: 1.4em;
   }
 
+  .title {
+    font-size: 2.6em;
+  }
+
   #ham-icon {
     font-size: 1.4em;
   }
@@ -241,10 +253,6 @@ footer p {
   main img {
     width: 320px;
     height: 255px;
-  }
-
-  .title {
-    font-size: 1.5em;
   }
 
   footer h3 {
@@ -261,11 +269,11 @@ footer p {
     position: absolute;
     top: 25px;
     left: 25px;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .title {
-    font-size: 2.2em;
+    font-size: 3.2em;
   }
 
   #navbar-toggle {
@@ -306,7 +314,7 @@ footer p {
   }
 
   .title {
-    font-size: 2.9em;
+    font-size: 3.2em;
   }
 
   main {
@@ -324,5 +332,32 @@ footer p {
 
   footer p {
     margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    height: 800px;
+  }
+
+  #left-nav {
+    font-size: 1.4em;
+  }
+
+  #right-nav {
+    font-size: 1.2em;
+  }
+
+  .title {
+    font-size: 3.2em;
+    /* font-size: 2.9em; */
+  }
+
+  .title h1 {
+    font-size: 3em;
+  }
+
+  main {
+    font-size: 1.3em;
   }
 }

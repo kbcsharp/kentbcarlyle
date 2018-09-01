@@ -275,7 +275,7 @@ footer p {
     display: flex !important;
     flex-direction: row;
     position: absolute;
-    top: 17px;
+    top: 15px;
     right: 10px;
     margin: 0;
   }

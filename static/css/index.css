@@ -154,6 +154,7 @@ section img {
 }
 
 main {
+  text-align: center;
   background-color: white;
 }
 
@@ -182,15 +183,11 @@ main h4 {
 }
 
 #m-wrapper {
-  height: 550px;
+  text-align: center;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  /* margin-top: 15%;
-  margin-bottom: 15%;
-  margin-left: 5%;
-  margin-right: 5%; */
 }
 
 footer {
@@ -383,6 +380,11 @@ footer p {
     width: 205px;
     height: 240px;
     margin-right: 20px;
+  }
+
+  #m-wrapper {
+    flex-direction: row;
+    align-items: center;
   }
 
   footer {

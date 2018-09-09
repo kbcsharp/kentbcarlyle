@@ -26,9 +26,9 @@
           <li><a href="/">HOME</a></li>
           <li><a href="portfolio/">PORTFOLIO</a></li>
           <li><a href="blog/">BLOG</a></li>
-          <li><a href="mailto:kentbcarlyle@gmail.com">CONTACT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
           <li class="social">
-            <a href="https://github.com/kbcsharp"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/kbcsharp" target="_blank"><i class="fab fa-github"></i></a>
           </li>
         </ul>
       </nav>
@@ -41,7 +41,7 @@
 
     </header>
 
-    <section>
+    <section id="about">
       <div id="s-wrapper">
         <img src="images/headshot2.jpg">
         <h3>Hi, my name is Kent and I am a JavaScript developer. I love tech, crypto, and of course - Coding! Please feel
@@ -60,6 +60,37 @@
       </div>
     </main>
 
+    <section id="contact">
+      <div>
+        <h4>Contact Me:</h4>
+      </div>
+      <form id="contact-form" action="https://formspree.io/kentbcarlyle@gmail.com" method="POST">
+        <div id="contact-name">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Your Name" id="name" required data-validation-required-message="Please enter your name"
+            name="name">
+        </div>
+
+        <div id="contact-email">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="Your Email" id="email" required data-validation-required-message="Please enter your email"
+            name="_replyto">
+        </div>
+
+        <div id="contact-message">
+          <textarea rows="20" placeholder="Your Message" id="message" required data-validation-required-message="Please leave a message"
+            name="message"></textarea>
+        </div>
+
+        <div id="contact-submit">
+          <button type="submit" id="contact-submit-button">
+            <i class="far fa-share-square"></i>
+            Send Message
+          </button>
+        </div>
+      </form>
+    </section>
+
     <footer>
       <h3>"Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something
         wonderful, that's what matters to me."</br>-Steve Jobs-</h3>
@@ -69,15 +100,15 @@
           <li><a href="/">HOME</a></li>
           <li><a href="portfolio/">PORTFOLIO</a></li>
           <li><a href="blog/">BLOG</a></li>
-          <li><a href="mailto:kentbcarlyle@gmail.com">CONTACT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
 
       <nav id="footer-social-nav">
         <ul id="bottom-social-nav">
-          <li><a href="https://github.com/kbcsharp"><i class="footer-icon fab fa-github"></i></a></li>
-          <li><a href="mailto:kentbcarlyle@gmail.com"><i class="footer-icon fas fa-envelope"></i></a></li>
-          <li><a href="https://twitter.com/kentcarlyleII"><i class="footer-icon fab fa-twitter"></i></a></li>
+          <li><a href="https://github.com/kbcsharp" target="_blank"><i class="footer-icon fab fa-github"></i></a></li>
+          <li><a href="https://twitter.com/kentcarlyleII" target="_blank"><i class="footer-icon fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/kentbcarlyle" target="_blank"><i class="footer-icon fab fa-linkedin"></i></a></li>
         </ul>
       </nav>
 

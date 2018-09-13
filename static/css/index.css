@@ -5,7 +5,7 @@
 .wrapper {
   margin: 0 auto;
   height: fill;
-  max-width: 1450px;
+  max-width: 1600px;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(500px, auto) minmax(50px, auto) minmax(50px, auto)
@@ -189,7 +189,7 @@ main h4 {
 
 #m-wrapper {
   text-align: center;
-  min-height: 550px;
+  min-height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -198,7 +198,7 @@ main h4 {
 #contact {
   background-color: whitesmoke;
   text-align: center;
-  min-height: 600px;
+  min-height: 700px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -348,6 +348,9 @@ footer p {
 }
 
 @media (min-width: 767px) {
+  header {
+    min-height: 700px;
+  }
   #left-nav {
     position: absolute;
     top: 25px;
@@ -398,7 +401,7 @@ footer p {
 
 @media (min-width: 991px) {
   header {
-    height: 700px;
+    height: 800px;
   }
 
   #right-nav {

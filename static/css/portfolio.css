@@ -5,7 +5,7 @@
 .wrapper {
   margin: 0 auto;
   height: fill;
-  max-width: 1600px;
+  max-width: 1800px;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, 500px);
@@ -337,7 +337,7 @@ footer p {
 
 @media (min-width: 1200px) {
   header {
-    height: 800px;
+    height: 900px;
   }
 
   #left-nav {

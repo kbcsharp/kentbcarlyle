@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
@@ -41,7 +42,7 @@
 
     </header>
 
-    <section id="about">
+    <section data-aos="fade-in" id="about">
       <div id="s-wrapper">
         <img src="images/headshot2.jpg">
         <h3>Hi, my name is Kent and I am a JavaScript developer. I love tech, crypto, and of course - Coding! I am passionate,
@@ -52,7 +53,7 @@
       </div>
     </section>
 
-    <main>
+    <main data-aos="fade-in">
       <h4>Projects:</h4>
       <div id="m-wrapper">
         <a class="projects" href="https://www.wislerdental.com" target="_blank"><img src="images/wislerDental.png"></a>
@@ -61,7 +62,7 @@
       </div>
     </main>
 
-    <section id="contact">
+    <section data-aos="fade-in" id="contact">
       <div>
         <h4>Contact Me:</h4>
       </div>
@@ -92,7 +93,7 @@
       </form>
     </section>
 
-    <footer>
+    <footer data-aos="fade-in">
       <h3>"Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something
         wonderful, that's what matters to me."</br>-Steve Jobs-</h3>
 
@@ -120,6 +121,10 @@
   </div>
 
   <script type="text/javascript" src="js/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

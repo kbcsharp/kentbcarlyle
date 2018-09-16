@@ -8,7 +8,7 @@
   max-width: 1800px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, 500px);
+  grid-auto-rows: minmax(50px, auto) minmax(50px, auto) minmax(500px, auto);
   grid-template-areas:
     "header"
     "main"
@@ -146,19 +146,18 @@ main a {
 }
 
 footer {
+  min-height: 500px;
   color: white;
   background-color: #26262a;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 footer h3 {
-  font-weight: 300;
-  margin-top: 15%;
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -169,7 +168,6 @@ footer a {
 
 footer p {
   color: lightgray;
-  margin-bottom: 15%;
   font-size: 0.65em;
 }
 
@@ -337,14 +335,6 @@ footer p {
     padding-left: 12%;
     padding-right: 12%;
   }
-
-  footer h3 {
-    margin-top: 10%;
-  }
-
-  footer p {
-    margin-bottom: 10%;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -371,5 +361,10 @@ footer p {
 
   main {
     font-size: 1.3em;
+  }
+
+  footer {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }

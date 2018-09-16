@@ -41,12 +41,52 @@
         <br>
         <div class="blog-writing">
           <p>
-            <!-- With this post I want to cover one of our assignments for the week. Basically, I needed to make a calculator just like the
-            photo above, take in two inputs, calculate the result, and dipaly it below Results:. When I began the first thing
-            I knew was that I did not want to solve this with an onlick function for each button. It doesn't matter
+            With this post I want to cover one of our assignments for the week. Basically, I needed to make a calculator just like the
+            photo above. Using HTML, CSS, and JS, the calculaor takes in two input values, and based on the button click,
+            the correct reults will display. When I began, the first thing I knew was that I did not want to solve this with
+            an onclick function for each button. I knew that wasn't performant and really just not the way it 'should' be
+            done. I knew that this should be solved with an event listener on the parent of the buttons. In this case, sure
+            you don't have to do it this way. However, what if there was 50 buttons? Do you really want a different function
+            for each button? Even though I knew what I wanted to do, I just kept running into small roadblocks each time
+            I thought I had it done. I am going to review my JavaScript only here, the HTML and CSS are in the codepen as
+            well though.
           </p>
-
-          <p>-Kent-</p> -->
+          <br>
+          <p data-height="265" data-theme-id="0" data-slug-hash="MqqVmm" data-default-tab="js,result" data-user="kbcsharp" data-pen-title="Calculate this..."
+            class="codepen">See the Pen <a href="https://codepen.io/kbcsharp/pen/MqqVmm/">Calculate this...</a> by
+            Kent Carlyle II (<a href="https://codepen.io/kbcsharp">@kbcsharp</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <br>
+          <p>
+            First, I made two variables. One is an element variable named 'para'. This is just a paragraph element to push the calculator
+            results to. The other is named 'button-list', this is the parent div that contains each of the operator buttons.
+            I added an eventlistener to the 'button-list' div with a 'click' parameter and also a function named 'operate'
+            parameter. This will listen for a click within the 'button-list' div and then call the operate function which
+            I made next. The 'operate' function starts off with the event being passed in as a parameter and then immediately
+            calling preventdefault on the event. This will prevent the page from being reloaded when the buttons are pressed.
+            Next, I create two variable elements to access the two numbers that are input.
+          </p>
+          <br>
+          <p>
+            When using a form element you can access child elements by using document.forms.'the name of your form'.'the id of the target'.value.
+            This will pull that value out for you. Then I created a variable named result and set it equal to a function
+            named 'calculate' which I will create next. Finally, I set the 'para' variable .textcontent to be equal to the
+            result variable. This will take the result and display it on the document under the Result: heading.
+          </p>
+          <br>
+          <p>
+            The 'calculate' function takes in three parameters, the first number entered, the second number entered, and the operator.
+            What needs to be done right away here is to convert the input strings into numbers. This is done here with parseFloat.
+            Next, I just have an else if statement that runs through to check which operator button was pressed. The desired
+            operation is then completed and the result is returned.
+          </p>
+          <br>
+          <p>
+            This was a fun little exercise that gave me some experience in working with event listeners. Also, I was not aware that I
+            could grab values inside of a form the way I did it here. Valuable exercise that I enjoyed.
+          </p>
+          <br>
+          <p>-Kent-</p>
 
         </div>
       </div>

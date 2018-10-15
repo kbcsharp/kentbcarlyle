@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../../css/blogPosts.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <title>Blog 18, Week 7 recap...</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav id="header-nav">
+        <span id="navbar-toggle">
+          <i id="ham-icon" class="fas fa-bars"></i>
+        </span>
+        <h2 id="left-nav">Kent B. Carlyle II</h2>
+        <ul id="right-nav">
+          <li><a href="/">HOME</a></li>
+          <li><a href="../../portfolio">PORTFOLIO</a></li>
+          <li><a href="../../blog">BLOG</a></li>
+          <li><a href="/#contact">CONTACT</a></li>
+          <li class="social">
+            <a href="https://github.com/kbcsharp" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="m-wrapper">
+        <img src="../../images/7oclock.jpeg">
+        <div class="blog-titles">
+          <h4>#18 Week 7 recap...</h4>
+          <p>14 October 2018</p>
+        </div>
+        <br>
+        <div class="blog-writing">
+          <p>
+            Week 7 was a 4-day week and I spent it working on my blue badge, full-stack project. I have the backend locked down and my
+            focus was completely on React and the frontend. I can't believe how much time it took to get all the functionality
+            I wanted in my app. As a matter of fact, I thought I was done Friday with functionality and could solely focus
+            on styling and animation. I was sadly mistaken. I feel like a firefighting coder. I put a fire out, move on,
+            and bam another fire is blazing.
+          </p>
+          <br>
+          <p>
+            I am building a flashcard application and everything I need just didn't seem to work properly at first. For instance, I wanted
+            to get a note to display on the screen depending on which category button was clicked. My first solution was
+            fetch the data needed from the backend on each click. This would pull the row on the table from the backend which
+            matched the category selected and this value would go into state. Then I could grab the value from the state
+            in render to display on the screen.
+          </p>
+          <br>
+          <p>
+            The issue here is that you have to click every button twice to display. Fortunately, I finally thought of going about it
+            a different way. Instead of doing a fetch to the backend for each button click, just figure out a way to manipulate
+            the current data array in state. I ended running a fetch on page load and then taking the data from state through
+            a filter. Then render the data I needed from state in the render. It's tons of small issues like this that took
+            my time up this week.
+          </p>
+          <br>
+          <p>
+            It can be tedious and draining at times but once you get it working, you get to see the functionality come to life and it
+            sure makes you feel good. Looking back I feel like I box myself into solving a problem a certain way once I have
+            already written that code. Instead, I think I need to be more willing to start tackling the problem from a different
+            angle earlier in the process. Had I done that with this problem, I could have solved it quicker and moved on
+            to the next implementation.
+          </p>
+          <br>
+          <p>
+            Friday morning we had another networking workshop. Some time was spent discussing possible ways the course could finish and
+            some experiences previous students had with interviewing and job choices, etc... The main focus after was working
+            on an elevator pitch for yourself. Basically, it's a quick, verbal way to explain who you are, what you are about,
+            and what you do for a living. I can see how this can be helpful but I just kind of feel weird and insincere with
+            this type of stuff. However, I guess another way to look at it is if you don't advertise yourself than how will
+            you get noticed in the first place. Either way, two and a half hours was too long for this workshop.
+          </p>
+          <br>
+          <p>
+            This weekend I finished all of the 'have to have' functionality and began working on styling my project. I also began to
+            look into animation libraries. I have some animation completed on my login/signup page but it took me a lot of
+            time to get that done right. The docs just don't describe things in such a way to make it easy to get started.
+            I feel like if I knew someone that had used this particular animation library before, they could have explained
+            the basics to me in 1/4 of the time it took for me to do it alone. I really, really want to get some animations
+            for my flashcards and notes but I only have a few days left. I also want to get a profile page that loads upon
+            sign in and maybe a photo with it. Finally, I need to review a few edge cases that could occur with some of the
+            functionality with my app. Most of this isn't really 'must-haves' but I really want to make them happen. I only
+            have Monday and Tuesday left. I will find out quickly here if I am able to get the final look I want. If not,
+            hopefully I get close enough.
+          </p>
+          <br>
+          <p>-Kent-</p>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h3>"We write to taste life twice, in the moment and in retrospect"<br>-Ana&#239s Nin-</h3>
+      <nav id="footer-nav">
+        <ul id="bottom-nav">
+          <li><a href="/">HOME</a></li>
+          <li><a href="../../portfolio">PORTFOLIO</a></li>
+          <li><a href="../../blog">BLOG</a></li>
+          <li><a href="/#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <nav id="footer-social-nav">
+        <ul id="bottom-social-nav">
+          <li><a href="https://github.com/kbcsharp" target="_blank"><i class="footer-icon fab fa-github"></i></a></li>
+          <li><a href="https://twitter.com/kentcarlyleII" target="_blank"><i class="footer-icon fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/kentbcarlyle" target="_blank"><i class="footer-icon fab fa-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <p>&copy 2018 Kent Carlyle II. All rights reserved. The content on this website is owned by me and our licensors. Do
+        not copy any content(including images) without my consent.</p>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../js/index.js"></script>
+</body>
+
+</html>

@@ -170,8 +170,12 @@ main img {
 }
 
 main h4 {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 2em;
+}
+
+.projects-wrapper {
+  padding: 20px;
 }
 
 .projects:link {
@@ -189,10 +193,11 @@ main h4 {
 
 #m-wrapper {
   text-align: center;
-  min-height: 750px;
+  min-height: 900px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  padding-bottom: 25px;
 }
 
 #contact {
@@ -382,6 +387,11 @@ footer p {
     height: 235px;
   }
 
+  #m-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   main img {
     width: 340px;
     height: 275px;
@@ -464,6 +474,11 @@ footer p {
 
   .title {
     font-size: 3.5em;
+  }
+
+  main img {
+    width: 380px;
+    height: 315px;
   }
 
   footer {

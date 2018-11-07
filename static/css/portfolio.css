@@ -149,7 +149,7 @@ main a {
 }
 
 #m-wrapper {
-  height: 1400px;
+  height: 1800px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -252,6 +252,10 @@ footer p {
   main img {
     width: 320px;
     height: 255px;
+  }
+
+  #m-wrapper {
+    height: 2000px;
   }
 
   footer h3 {

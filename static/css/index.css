@@ -163,10 +163,10 @@ main {
 }
 
 main img {
-  width: 260px;
-  height: 195px;
-  border: 2px solid black;
-  border-radius: 20px;
+  width: 280px;
+  height: 215px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 main h4 {
@@ -175,6 +175,9 @@ main h4 {
 }
 
 .projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
@@ -192,12 +195,19 @@ main h4 {
 }
 
 #m-wrapper {
-  text-align: center;
-  min-height: 900px;
+  /* text-align: center; */
+  min-height: 1500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: 25px;
+}
+
+#m-wrapper p {
+  margin-top: 10px;
+  width: 280px;
+  min-height: 110px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #contact {
@@ -337,8 +347,13 @@ footer p {
   }
 
   main img {
-    width: 320px;
-    height: 255px;
+    width: 380px;
+    height: 315px;
+  }
+
+  #m-wrapper p {
+    font-size: 1.1em;
+    width: 380px;
   }
 
   main h4 {
@@ -388,13 +403,18 @@ footer p {
   }
 
   #m-wrapper {
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   main img {
-    width: 340px;
-    height: 275px;
+    width: 380px;
+    height: 315px;
+  }
+
+  #m-wrapper p {
+    width: 380px;
   }
 
   footer {
@@ -477,8 +497,12 @@ footer p {
   }
 
   main img {
-    width: 380px;
-    height: 315px;
+    width: 500px;
+    height: 445px;
+  }
+
+  #m-wrapper p {
+    width: 500px;
   }
 
   footer {

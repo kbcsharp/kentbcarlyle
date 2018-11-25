@@ -154,6 +154,7 @@ header {
   margin-bottom: 15%;
   margin-left: 5%;
   margin-right: 5%;
+  /* box-shadow: 5px 5px 25px gray; */
 }
 
 main {
@@ -250,7 +251,7 @@ main h4 {
 
 footer {
   margin: 0;
-  min-height: 500px;
+  min-height: 600px;
   color: white;
   background-color: #26262a;
   display: flex;
@@ -496,9 +497,18 @@ footer p {
     font-size: 3.5em;
   }
 
+  .projects-wrapper {
+    box-shadow: 0 0 15px black;
+    border-radius: 25px;
+    border: 3px solid gray;
+  }
+
   main img {
+    /* width: 525px; */
+    /* height: 430px; */
+
     width: 500px;
-    height: 445px;
+    height: 405px;
   }
 
   #m-wrapper p {

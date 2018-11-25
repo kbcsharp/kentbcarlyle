@@ -126,8 +126,8 @@ main {
 main img {
   width: 260px;
   height: 195px;
-  border: 2px solid black;
-  border-radius: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 main a {

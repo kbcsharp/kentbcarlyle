@@ -126,8 +126,14 @@ main {
 main img {
   width: 260px;
   height: 195px;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+main img:hover {
+  box-shadow: 0 0 20px gray;
+  transform: scale(1.01);
+  transition: all ease-out 0.4s;
 }
 
 main a {
@@ -144,7 +150,7 @@ main a {
 }
 
 .projects:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   transition: all 0.8s ease;
 }
 
